@@ -32,7 +32,7 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
         - name: Setup Node.js environment
-        uses: actions/setup-node@v1.4.2
+        uses: actions/setup-node@v2-beta
         with:
         version: 12
         - name: GitHub Action for Yarn
