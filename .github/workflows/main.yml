@@ -31,7 +31,7 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        - name: Setup Node.js environment
+      - name: Setup Node.js environment
         uses: actions/setup-node@v2-beta
         with:
         version: 12
@@ -46,8 +46,8 @@ jobs:
         - name: installing surge 
           run: yarn install -g surge
           
-          - name : Deploying surge App
-            run: surge ./build http://reactprojectone.surge.sh/ --token ${{secrets.surge_token}}
+        - name : Deploying surge App
+          run: surge ./build http://reactprojectone.surge.sh/ --token ${{secrets.surge_token}}
             
           
   
