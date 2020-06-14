@@ -38,4 +38,4 @@ jobs:
 
       
     - name: Upload site
-      run: surge ./build reactprojectone.surge.sh --token ${{secrets.SURGE_TOKEN }}
+      run: surge ./build http://reactprojectone.surge.sh/ --token ${{secrets.SURGE_TOKEN }}
