@@ -36,6 +36,8 @@ jobs:
     - name: Install SURGE
       run: npm install --global surge
 
+
       
     - name: Upload site
       run: surge ./build http://reactprojectone.surge.sh/ --token ${{secrets.SURGE_TOKEN }}
+
