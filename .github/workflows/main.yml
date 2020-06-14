@@ -34,7 +34,7 @@ jobs:
       run: yarn build
       
     - name: Install SURGE
-      run: npm i -g surge
+      run: yarn i -g surge
       
     - name: Upload site
       run: surge ./build reactprojectone.surge.sh --token ${{secrets.SURGE_TOKEN }}
