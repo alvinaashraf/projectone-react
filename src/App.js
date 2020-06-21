@@ -1,6 +1,6 @@
 //import React from 'react';
 import './App.css';
-import  React,  {useState} from 'react';
+import  React from 'react';
 
 import Header from './components/Header';
 import Balance from './components/Balance';
