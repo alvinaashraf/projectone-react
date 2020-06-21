@@ -1,23 +1,39 @@
-import React from 'react';
-//import logo from './logo.svg';
+//import React from 'react';
 import './App.css';
-import './dinner';
-import Dinner from './dinner';
+import  React,  {useState} from 'react';
+
+import Header from './components/Header';
+import Balance from './components/Balance';
+import AccountSummary from './components/AccountSummary';
+import TransactionHistory from './components/TransactionHistory';
+import AddTransaction from './components/Add-Transaction';
+import {GlobalProvider} from './context/GlobalState';
 
 function App() {
+  //let [count , setcount ] =useState(0)
+  //let [isday , setday ] = useState(false)
+
+
   return (
-    <div className="Dinner">
-    <Dinner dishname="biryani"  sweet="ice creans" age = {20}  >
+    <GlobalProvider>
+<div>
+<Header>
+  </Header>
+  <div className="container">
+<Balance/>
+<AccountSummary/>
+<TransactionHistory>
+  </TransactionHistory>
+  <AddTransaction>
+    </AddTransaction>
+    </div>
 
-      </Dinner>
-
-      <Dinner sweet="chocloate ">
-
-        </Dinner>
-    
-         </div>
-   
-  );
+  </div>
+  
+  </GlobalProvider>
+  
+  
+    );
 }
 
 
